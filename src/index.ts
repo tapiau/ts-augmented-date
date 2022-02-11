@@ -15,9 +15,12 @@ function digits2(str: string): string {
 function digits3(str: string): string {
     return ('00' + str).slice(-3);
 }
+function digits4(str: string): string {
+    return ('000' + str).slice(-4);
+}
 
 Date.prototype.getyyyyMMddHHmmssSSS = function(): string {
-    return this.getFullYear()
+    return digits4(this.getFullYear())
         + '-'
         + digits2(this.getMonth() + 1)
         + '-'
@@ -34,7 +37,7 @@ Date.prototype.getyyyyMMddHHmmssSSS = function(): string {
 };
 
 Date.prototype.getyyyyMMddHHmmss = function(): string {
-    return this.getFullYear()
+    return digits4(this.getFullYear())
         + '-'
         + digits2(this.getMonth() + 1)
         + '-'
@@ -49,7 +52,7 @@ Date.prototype.getyyyyMMddHHmmss = function(): string {
 };
 
 Date.prototype.getyyyyMMdd = function(): string {
-    return this.getFullYear()
+    return digits4(this.getFullYear())
         + '-'
         + digits2(this.getMonth() + 1)
         + '-'
