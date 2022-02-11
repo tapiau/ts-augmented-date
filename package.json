@@ -15,7 +15,18 @@
   "keywords": [
     "typescript",
     "date",
-    "yyyyMMdd"
+    "getyyyyMMdd",
+    "getyyyyMMddHHmmss",
+    "getyyyyMMddHHmmssSSS",
+    "getHHmmssSSS",
+    "getHHmmss",
+    "getHHmm",
+    "yyyyMMdd",
+    "yyyyMMddHHmmss",
+    "yyyyMMddHHmmssSSS",
+    "HHmmssSSS",
+    "HHmmss",
+    "HHmm"
   ],
   "author": "Zbigniew 'zibi' Jarosik",
   "maintainers": [

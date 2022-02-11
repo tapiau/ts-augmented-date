@@ -2,7 +2,6 @@
 
 Extends String methods adding:
 - getyyyyMMdd(): string;
-- getyyyyMMdd(): string;
 - getyyyyMMddHHmmss(): string;
 - getyyyyMMddHHmmssSSS(): string;
 - getHHmmssSSS(): string;
