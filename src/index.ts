@@ -9,71 +9,78 @@ declare global {
     }
 }
 
+function digits2(str: string): string {
+    return ('0' + str).slice(-2);
+}
+function digits3(str: string): string {
+    return ('00' + str).slice(-3);
+}
+
 Date.prototype.getyyyyMMddHHmmssSSS = function(): string {
     return this.getFullYear()
         + '-'
-        + ('0' + (this.getMonth() + 1)).slice(-2)
+        + digits2(this.getMonth() + 1)
         + '-'
-        + ('0' + this.getDate()).slice(-2)
+        + digits2(this.getDate())
         + ' '
-        + ('0' + this.getHours()).slice(-2)
+        + digits2(this.getHours())
         + ':'
-        + ('0' + (this.getMinutes())).slice(-2)
+        + digits2(this.getMinutes())
         + ':'
-        + this.getSeconds()
+        + digits2(this.getSeconds())
         + '.'
-        + this.getMilliseconds()
-        ;
+        + digits3(this.getMilliseconds())
+    ;
 };
 
 Date.prototype.getyyyyMMddHHmmss = function(): string {
     return this.getFullYear()
         + '-'
-        + ('0' + (this.getMonth() + 1)).slice(-2)
+        + digits2(this.getMonth() + 1)
         + '-'
-        + ('0' + this.getDate()).slice(-2)
+        + digits2(this.getDate())
         + ' '
-        + ('0' + this.getHours()).slice(-2)
+        + digits2(this.getHours())
         + ':'
-        + ('0' + (this.getMinutes())).slice(-2)
+        + digits2(this.getMinutes())
         + ':'
-        + this.getSeconds()
-        ;
+        + digits2(this.getSeconds())
+    ;
 };
 
 Date.prototype.getyyyyMMdd = function(): string {
     return this.getFullYear()
         + '-'
-        + ('0' + (this.getMonth() + 1)).slice(-2)
+        + digits2(this.getMonth() + 1)
         + '-'
-        + ('0' + this.getDate()).slice(-2)
+        + digits2(this.getDate())
     ;
 };
 
 Date.prototype.getHHmmssSSS = function(): string {
-    return ('0' + this.getHours()).slice(-2)
+    return digits2(this.getHours())
         + ':'
-        + ('0' + (this.getMinutes())).slice(-2)
+        + digits2(this.getMinutes())
         + ':'
-        + this.getSeconds()
+        + digits2(this.getSeconds())
         + '.'
-        + this.getMilliseconds()
-        ;
+        + digits3(this.getMilliseconds())
+    ;
 };
 
 Date.prototype.getHHmmss = function(): string {
-    return ('0' + this.getHours()).slice(-2)
+    return digits2(this.getHours())
         + ':'
-        + ('0' + (this.getMinutes())).slice(-2)
+        + digits2(this.getMinutes())
         + ':'
-        + this.getSeconds()
-        ;
+        + digits2(this.getSeconds())
+    ;
 };
 
 Date.prototype.getHHmm = function(): string {
-    return ('0' + this.getHours()).slice(-2)
+    return digits2(this.getHours())
         + ':'
-        + ('0' + (this.getMinutes())).slice(-2)
+        + digits2(this.getMinutes())
     ;
 };
 
