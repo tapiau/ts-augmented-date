@@ -1,6 +1,6 @@
 # TS Augmented Date
 
-Extends String methods adding:
+Extends Date methods adding:
 - getyyyyMMdd(): string;
 - getyyyyMMddHHmmss(): string;
 - getyyyyMMddHHmmssSSS(): string;
