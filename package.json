@@ -12,21 +12,21 @@
     "type": "git",
     "url": "git@github.com:tapiau/ts-augmented-date.git"
   },
-
   "keywords": [
     "typescript",
     "date",
-    "yyyyMMdd",
+    "yyyyMMdd"
   ],
   "author": "Zbigniew 'zibi' Jarosik",
-  "maintainers": [{
-    "name": "Zbigniew 'zibi' Jarosik",
-    "email": "zibi@nora.pl",
-    "url": "http://github.com/tapiau"
-  }],
+  "maintainers": [
+    {
+      "name": "Zbigniew 'zibi' Jarosik",
+      "email": "zibi@nora.pl",
+      "url": "http://github.com/tapiau"
+    }
+  ],
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "typescript": "^4.4.3",
     "@types/chai": "^4.2.22",

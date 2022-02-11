@@ -1,6 +1,12 @@
 # TS Augmented Date
 
 Extends String methods adding:
-- yyyyMMdd(): string;
+- getyyyyMMdd(): string;
+- getyyyyMMdd(): string;
+- getyyyyMMddHHmmss(): string;
+- getyyyyMMddHHmmssSSS(): string;
+- getHHmmssSSS(): string;
+- getHHmmss(): string;
+- getHHmm(): string;
 
 No additional dependencies!
