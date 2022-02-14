@@ -1,11 +1,21 @@
 declare global {
     interface Date {
-        getyyyyMMdd(): string;
-        getyyyyMMddHHmmss(): string;
         getyyyyMMddHHmmssSSS(): string;
+        getyyyyMMddHHmmss(): string;
+        getyyyyMMdd(): string;
         getHHmmssSSS(): string;
         getHHmmss(): string;
         getHHmm(): string;
+    }
+}
+declare global {
+    interface DateConstructor {
+        nowyyyyMMddHHmmssSSS(): string;
+        nowyyyyMMddHHmmss(): string;
+        nowyyyyMMdd(): string;
+        nowHHmmssSSS(): string;
+        nowHHmmss(): string;
+        nowHHmm(): string;
     }
 }
 
@@ -86,6 +96,13 @@ Date.prototype.getHHmm = function(): string {
         + digits2(this.getMinutes())
     ;
 };
+
+Date.nowyyyyMMddHHmmssSSS = (): string => new Date(Date.now()).getyyyyMMddHHmmssSSS();
+Date.nowyyyyMMddHHmmss = (): string => new Date(Date.now()).getyyyyMMddHHmmss();
+Date.nowyyyyMMdd = (): string => new Date(Date.now()).getyyyyMMdd();
+Date.nowHHmmssSSS = (): string => new Date(Date.now()).getHHmmssSSS();
+Date.nowHHmmss = (): string => new Date(Date.now()).getHHmmss();
+Date.nowHHmm = (): string => new Date(Date.now()).getHHmm();
 
 export {};
 
