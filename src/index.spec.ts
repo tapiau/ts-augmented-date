@@ -5,7 +5,7 @@ import './index';
 const now = Date.now;
 const timestamp = 1644568675402;
 
-describe('Date get*() functions', () => {
+describe('Date extension functions', () => {
     before(() => {
         Date.now = () => timestamp;
     });
